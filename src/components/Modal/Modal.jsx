@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -44,3 +46,9 @@ const Modal = ({ url, alt, toggleModal }) => {
   );
 };
 export default Modal;
+
+Modal.propTypes = {
+  url: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  toggleModal: PropTypes.func.isRequired,
+};

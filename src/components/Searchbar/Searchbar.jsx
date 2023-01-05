@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useState } from 'react';
 import { FcSearch } from 'react-icons/fc';
 
@@ -83,3 +85,7 @@ const Searchbar = ({ onSubmit }) => {
 //   }
 // }
 export default Searchbar;
+
+Searchbar.propTypes = {
+  onSubmit: PropTypes.func,
+};
