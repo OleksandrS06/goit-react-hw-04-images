@@ -20,7 +20,7 @@ const Modal = ({ url, alt, toggleModal }) => {
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [toggleModal]);
 
   // const handleKeyDown = e => {
   //   if (e.code === 'Escape') {
